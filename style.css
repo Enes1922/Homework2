@@ -23,7 +23,6 @@ body {
         "footer";
 }
 
-
 .header {
     grid-area: header;
     background: #111;
@@ -35,7 +34,6 @@ body {
 .header h1 {
     color: #00ffff;
 }
-
 
 .nav {
     grid-area: nav;
@@ -83,13 +81,14 @@ body {
     color: #00ffff;
 }
 
-
 .sidebar {
     grid-area: sidebar;
     background: #141414;
     padding: 20px;
     border: 2px solid #00ffff;
-    height: auto;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
 }
 
 .sidebar h3 {
@@ -116,7 +115,9 @@ body {
     background: #1a1a1a;
     padding: 20px;
     border: 2px solid #ff00ff;
-    height: auto;
+    height: fit-content;
+    position: sticky;
+    top: 200px;   
 }
 
 .ad h3 {
@@ -126,10 +127,9 @@ body {
 
 .ad img {
     width: 100%;
-    border: 2px solid #ff00ff;
     height: auto;
+    border: 2px solid #ff00ff;
 }
-
 
 .footer {
     grid-area: footer;
@@ -138,7 +138,6 @@ body {
     text-align: center;
     border-top: 2px solid #00ffff;
 }
-
 
 @media (min-width: 576px) {
     .container {
@@ -160,10 +159,10 @@ body {
             "nav nav nav"
             "content sidebar ad"
             "footer footer footer";
-        align-items: start;
     }
 
     .content, .sidebar, .ad {
         align-self: start;
     }
 }
+
