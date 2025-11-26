@@ -47,12 +47,17 @@ body {
     color: #00e6e6;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 6px;
 }
 
 .nav a:hover {
     color: white;
-    text-shadow: 0 0 10px #00ffff;
+    text-shadow: 0 0 12px #00ffff;
+    background: rgba(0, 255, 255, 0.15);
+    transform: scale(1.08);
+    box-shadow: 0 0 10px #00ffff;
 }
 
 .content {
@@ -134,9 +139,17 @@ body {
 .footer {
     grid-area: footer;
     background: #111;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     border-top: 2px solid #00ffff;
+    color: #cccccc;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.footer p {
+    margin: 0;
+    opacity: 0.85;
 }
 
 @media (min-width: 576px) {
@@ -176,5 +189,6 @@ body {
         height: auto;
     }
 }
+
 
 
