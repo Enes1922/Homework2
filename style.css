@@ -86,9 +86,9 @@ body {
     background: #141414;
     padding: 20px;
     border: 2px solid #00ffff;
-    height: fit-content;
+    height: auto;
     position: sticky;
-    top: 20px;
+    top: 20px;      
 }
 
 .sidebar h3 {
@@ -115,9 +115,9 @@ body {
     background: #1a1a1a;
     padding: 20px;
     border: 2px solid #ff00ff;
-    height: fit-content;
+    height: auto;
     position: sticky;
-    top: 200px;   
+    top: 20px;      
 }
 
 .ad h3 {
@@ -176,4 +176,5 @@ body {
         height: auto;
     }
 }
+
 
