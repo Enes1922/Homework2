@@ -159,10 +159,21 @@ body {
             "nav nav nav"
             "content sidebar ad"
             "footer footer footer";
+        align-items: start;       
     }
 
     .content, .sidebar, .ad {
         align-self: start;
+    }
+
+    .sidebar, .ad {
+        width: 100%;
+    }
+
+    .game img,
+    .ad img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
