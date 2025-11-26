@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0d0d;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "sidebar"
+        "ad"
+        "footer";
+    gap: 15px;
+    padding: 15px;
+}
+
+.header {
+    grid-area: header;
+    background: #111;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #00ffff;
+}
+
+.header h1 {
+    color: #00ffff;
+    font-size: 30px;
+}
+
+.nav {
+    grid-area: nav;
+    background: #1a1a1a;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a {
+    color: #00e6e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: white;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+
+.content {
+    grid-area: content;
+    background: #1a1a1a;
+    padding: 20px;
+    border-left: 3px solid #00ffff;
+}
+
+.game {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.game img {
+    width: 100%;
+    border: 2px solid #00ffff;
+    margin: 10px 0;
+}
+
+.game h2 {
+    color: #00ffff;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    background: #141414;
+    padding: 20px;
+    border: 2px solid #00ffff;
+}
+
+.sidebar h3 {
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.tags span {
+    display: inline-block;
+    background: #00ffff;
+    color: #000;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+
+.ad {
+    grid-area: ad;
+    background: #1a1a1a;
+    padding: 20px;
+    border: 2px solid #ff00ff;
+}
+
+.ad h3 {
+    color: #ff00ff;
+    margin-bottom: 10px;
+}
+
+.ad img {
+    width: 100%;
+    border: 2px solid #ff00ff;
+}
+
+
+.footer {
+    grid-area: footer;
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #00ffff;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "content sidebar"
+            "ad ad"
+            "footer footer";
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "content sidebar ad"
+            "footer footer footer";
+    }
+}
