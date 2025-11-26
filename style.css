@@ -21,7 +21,7 @@ body {
         "sidebar"
         "ad"
         "footer";
-    align-items: start;       
+    align-items: start;
 }
 
 .header {
@@ -71,7 +71,7 @@ body {
 
 .game img {
     width: 100%;
-    max-width: 600px;      
+    max-width: 600px;
     height: auto;
     display: block;
     margin: 10px auto;
@@ -133,7 +133,6 @@ body {
     border-top: 2px solid #00ffff;
 }
 
-/* TABLET */
 @media (min-width: 576px) {
     .container {
         grid-template-columns: 2fr 1fr;
@@ -143,26 +142,17 @@ body {
             "content sidebar"
             "ad ad"
             "footer footer";
-        align-items: start;   
     }
 }
 
 @media (min-width: 992px) {
     .container {
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         grid-template-areas:
-            "header header header"
-            "nav nav nav"
-            "content sidebar ad"
-            "footer footer footer";
-        align-items: start;    
-    }
-
-    .content, 
-    .sidebar, 
-    .ad {
-        align-self: start;     
+            "header header"
+            "nav nav"
+            "content sidebar"
+            "content ad"
+            "footer footer";
     }
 }
-
-
